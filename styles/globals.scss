@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Satoshi', sans-serif;
+  }
+}
+@layer components{
+  .title-black{
+    @apply text-6xl max-md:text-xl text-left text-black font-extrabold
+  }
+  .title-white{
+    @extend .title-black;
+    @apply text-white
+  }
+}
