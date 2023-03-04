@@ -6,7 +6,7 @@ const Banner = () => {
       <p className="text-lg font-semibold">
         Hit the ground running with a minimalistic look.
       </p>
-      <button className="px-4 py-3 uppercase hover:bg-gray-300 transition-colors bg-white text-black text-xs text-center font-medium max-w-[7rem]">
+      <button className="px-4 py-3 uppercase hover:bg-gray-300 transition-colors bg-white text-black text-xs text-center font-medium max-w-[7rem] rounded">
         Learn More
       </button>
     </div>

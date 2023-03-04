@@ -1,9 +1,10 @@
+import { BrandLogo } from "@/constants/BrandLogos";
 import Image from "next/image";
 import SmallDivider from "./SmallDivider";
 
 const Branding = () => {
   return (
-    <section className="w-full h-[60vh] relative flex flex-col gap-12 justify-center responsive max-lg:gap-12">
+    <section className="w-full min-h-[60vh] relative flex flex-col gap-12 justify-center responsive max-lg:gap-12">
       <div className="absolute inset-0">
         <div className="w-full h-full relative">
           {/* overlay */}
@@ -22,7 +23,12 @@ const Branding = () => {
           A Simple look is all you need to crush your competition.
         </p>
       </div>
-      <SmallDivider color="white"/>
+      <SmallDivider color="white" />
+      <div className="flex gap-6 z-50">
+        {[0, 1, 2, 3, 4].map((item) => {
+          return <BrandLogo key={item} />;
+        })}
+      </div>
     </section>
   );
 };
