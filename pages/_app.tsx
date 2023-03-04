@@ -1,6 +1,11 @@
-import '@/styles/globals.scss'
-import type { AppProps } from 'next/app'
+import { HamburgerMenuProvider } from "@/context/HamburgerContext";
+import "@/styles/globals.scss";
+import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <HamburgerMenuProvider>
+      <Component {...pageProps} />
+    </HamburgerMenuProvider>
+  );
 }

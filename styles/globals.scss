@@ -9,10 +9,13 @@
 }
 @layer components{
   .title-black{
-    @apply text-6xl max-md:text-xl text-left text-black font-extrabold
+    @apply text-6xl text-left text-black font-extrabold
   }
   .title-white{
     @extend .title-black;
     @apply text-white
+  }
+  .responsive{
+    @apply px-48 max-lg:px-32 max-md:px-16 max-sm:px-6
   }
 }

@@ -1,12 +1,16 @@
+import Banner from "@/components/Banner";
 import Branding from "@/components/Branding";
 import Footer from "@/components/Footer";
+import HamburgerMenu from "@/components/HamburgerMenu";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Info from "@/components/Info";
 import Stories from "@/components/Stories";
+import { useHamburgerMenu } from "@/context/HamburgerContext";
 import Head from "next/head";
 
 export default function Home() {
+  const { isOpen } = useHamburgerMenu();
   return (
     <>
       <Head>
@@ -19,12 +23,14 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <main className="flex flex-col items-center min-h-screen">
+      <main className="flex flex-col items-center min-h-screen overflow-x-hidden relative pt-[4.5rem]">
+        {isOpen ? <HamburgerMenu /> : null}
         <Header />
         <Hero />
         <Info />
         <Branding />
         <Stories />
+        <Banner />
         <Footer />
       </main>
     </>

@@ -16,11 +16,11 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="w-full h-full z-30 flex flex-col gap-6 relative ml-48 max-lg:m-auto justify-center ">
+      <div className="w-full h-full z-30 flex flex-col gap-6 relative responsive max-lg:gap-12 justify-center ">
         <h2 className="title-white ">
           We crush <br /> Minimal <br /> design.
         </h2>
-        <p className="text-white max-w-[40ch] text-left font-medium">
+        <p className="text-white max-w-[40ch] max-md:max-w-[25ch] text-left font-medium">
           <strong>MONOCHROME</strong> is a creative agency based in Chicago. We
           developed the genesis framework and build mobile-optimized themes for
           WordPress
